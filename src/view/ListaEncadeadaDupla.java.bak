@@ -1,0 +1,18 @@
+package view;
+
+import controller.ListaEncadeadaDuplaController;
+
+public class ListaEncadeadaDupla {
+	public static void main(String[] args) {
+		try {
+			ListaEncadeadaDuplaController obj = new ListaEncadeadaDuplaController();
+			ListaEncadeadaDupla<Integer> lista = new ListaEncadeadaDupla<Integer>();
+			//obj.ex1A();
+			//obj.ex1B();
+			obj.ex3(lista);
+			System.out.println(lista);
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+	}
+}

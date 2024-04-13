@@ -1,0 +1,22 @@
+package controller;
+
+import model.estrutura.ListaEncadeadaSimples;
+import model.estrutura.No;
+import model.Pessoa;
+
+public class ListaEncadeadaSimplesController {
+	public ListaEncadeadaSimplesController() {
+		super();
+	}
+
+	public String teste() throws Exception {
+		Pessoa[] p = Pessoa.carregar();
+		ListaEncadeadaSimples<Pessoa> lista = new ListaEncadeadaSimples<Pessoa>();
+		for(int i = 0; i < p.length; i++){
+			lista.append(p[i]);
+		}
+
+		return lista.toString();
+
+	}
+}
